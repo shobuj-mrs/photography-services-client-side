@@ -1,6 +1,9 @@
 import React from 'react';
+import 'react-photo-view/dist/react-photo-view.css';
+import { PhotoProvider, PhotoView } from 'react-photo-view';
 import { Link } from 'react-router-dom';
 import { FaStar, FaStarHalf } from "react-icons/fa";
+
 
 const AllServices = ({ service }) => {
     const { title, price, image, rating, description, _id } = service;
@@ -10,7 +13,16 @@ const AllServices = ({ service }) => {
 
                 <div>
                     <h2 className="mb-2 text-2xl font-semibold">{title}</h2>
-                    <img src={image} alt="" className="object-cover w-full rounded mb-4 h-60 sm:h-96 dark:bg-gray-500" />
+                    
+                    <PhotoProvider>
+
+                        <PhotoView>
+                            <img src={image} alt="" className="object-cover w-full rounded mb-4 h-60 sm:h-96 dark:bg-gray-500" />
+
+                        </PhotoView>
+
+                    </PhotoProvider>
+
                     <p className="text-sm dark:text-gray-400">
                         {
                             description.length > 100 ?
