@@ -8,8 +8,7 @@ const Section = () => {
                 <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
                     <div className="max-w-3xl">
                         <h2 className="text-3xl font-bold sm:text-4xl">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod alias
-                            doloribus impedit.
+                            Set Proper Fruit Photography Lighting
                         </h2>
                     </div>
 
@@ -24,20 +23,11 @@ const Section = () => {
 
                         <div className="lg:py-16">
                             <article className="space-y-4 text-gray-600">
-                                <p>
-                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut qui
-                                    hic atque tenetur quis eius quos ea neque sunt, accusantium soluta
-                                    minus veniam tempora deserunt? Molestiae eius quidem quam repellat.
+                                <p>Since fruits generally have a rounded surface, the light will bounce of it you does not set it properly. If you want to take a spectacular fruits images, it is better to go shoot in the studio
+
                                 </p>
 
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum
-                                    explicabo quidem voluptatum voluptas illo accusantium ipsam quis,
-                                    vel mollitia? Vel provident culpa dignissimos possimus, perferendis
-                                    consectetur odit accusantium dolorem amet voluptates aliquid,
-                                    ducimus tempore incidunt quas. Veritatis molestias tempora
-                                    distinctio voluptates sint! Itaque quasi corrupti, sequi quo odit
-                                    illum impedit!
+                                <p>MR Sobuz Pickering is a photographer, storyteller and humanitarian who travels the world hoping to build a bridge between cultures with her photography. Before we jump into how to photograph fruit better, it is better for you to understand what fruit photography is. Fruit photography is a specific genre of food photography which is included in still life photography genreRecently, has found a connection with ice and the polar regions. Fueled by a curiosity and concern for our shared planet, she hopes that her work will inspire awareness and positive change.
                                 </p>
                             </article>
                         </div>
@@ -66,22 +56,18 @@ const Section = () => {
 
                             <div className="p-8 sm:p-16 lg:p-24">
                                 <h2 className="text-2xl font-bold sm:text-3xl">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore,
-                                    debitis.
+                                    The Basics of Real Estate Photography for Interior Home Photos
                                 </h2>
 
                                 <p className="mt-4 text-gray-600">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid,
-                                    molestiae! Quidem est esse numquam odio deleniti, beatae, magni
-                                    dolores provident quaerat totam eos, aperiam architecto eius quis
-                                    quibusdam fugiat dicta.
+                                    If you are just starting out in Lightroom, we highly recommend that you start with our Complete Lightroom Tutorial for Beginners. Beyond that, we have written a large number of articles related to Lightroom that you can check out below. To make it easier to navigate through all the content, we have broken it down by organization, editing, and other Lightroom-related tutorials.
                                 </p>
 
                                 <Link
-                                    href="#"
+                                    to={'/services'}
                                     className="mt-8 inline-block rounded border border-indigo-600 bg-indigo-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500"
                                 >
-                                    Get in Touch
+                                    Get in service
                                 </Link>
                             </div>
                         </div>
