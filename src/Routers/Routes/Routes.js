@@ -6,6 +6,8 @@ import Home from "../../Pages/Home/Home";
 import Login from "../../Pages/Login&Register/Login/Login";
 import Register from "../../Pages/Login&Register/Register/Register";
 import Services from "../../Pages/Services/Services";
+import DetailServices from "../../Pages/Services/DetailServices";
+
 
 export const router = createBrowserRouter([
 
@@ -22,6 +24,11 @@ export const router = createBrowserRouter([
                 path: '/services',
                 element: <Services></Services>,
                 loader: () => fetch('https://assignment-11-service-server-side.vercel.app/services')
+            },
+            {
+                path: '/services/:id',
+                element: <DetailServices></DetailServices>,
+                loader: ({ params }) => fetch(`https://assignment-11-service-server-side.vercel.app/services/${params.id}`)
             },
             {
                 path: '/login',

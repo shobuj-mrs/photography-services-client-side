@@ -5,25 +5,25 @@ const Section = () => {
     return (
         <div>
             <section>
-                <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
-                    <div class="max-w-3xl">
-                        <h2 class="text-3xl font-bold sm:text-4xl">
+                <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
+                    <div className="max-w-3xl">
+                        <h2 className="text-3xl font-bold sm:text-4xl">
                             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod alias
                             doloribus impedit.
                         </h2>
                     </div>
 
-                    <div class="mt-8 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
-                        <div class="relative h-64 overflow-hidden sm:h-80 lg:h-full">
+                    <div className="mt-8 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
+                        <div className="relative h-64 overflow-hidden sm:h-80 lg:h-full">
                             <img
                                 alt="Party"
                                 src="https://images.unsplash.com/photo-1496843916299-590492c751f4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1771&q=80"
-                                class="absolute inset-0 h-full w-full object-cover"
+                                className="absolute inset-0 h-full w-full object-cover"
                             />
                         </div>
 
-                        <div class="lg:py-16">
-                            <article class="space-y-4 text-gray-600">
+                        <div className="lg:py-16">
+                            <article className="space-y-4 text-gray-600">
                                 <p>
                                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut qui
                                     hic atque tenetur quis eius quos ea neque sunt, accusantium soluta
@@ -47,30 +47,30 @@ const Section = () => {
 
 
             <section>
-                <div class="mx-auto max-w-screen-2xl px-4 py-16 sm:px-6 lg:px-8">
-                    <div class="grid grid-cols-1 lg:h-screen lg:grid-cols-2">
-                        <div class="relative z-10 lg:py-16">
-                            <div class="relative h-64 sm:h-80 lg:h-full">
+                <div className="mx-auto max-w-screen-2xl px-4 py-16 sm:px-6 lg:px-8">
+                    <div className="grid grid-cols-1 lg:h-screen lg:grid-cols-2">
+                        <div className="relative z-10 lg:py-16">
+                            <div className="relative h-64 sm:h-80 lg:h-full">
                                 <img
                                     alt="House"
                                     src="https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-                                    class="absolute inset-0 h-full w-full object-cover"
+                                    className="absolute inset-0 h-full w-full object-cover"
                                 />
                             </div>
                         </div>
 
-                        <div class="relative flex items-center bg-gray-100">
+                        <div className="relative flex items-center bg-gray-100">
                             <span
-                                class="hidden lg:absolute lg:inset-y-0 lg:-left-16 lg:block lg:w-16 lg:bg-gray-100"
+                                className="hidden lg:absolute lg:inset-y-0 lg:-left-16 lg:block lg:w-16 lg:bg-gray-100"
                             ></span>
 
-                            <div class="p-8 sm:p-16 lg:p-24">
-                                <h2 class="text-2xl font-bold sm:text-3xl">
+                            <div className="p-8 sm:p-16 lg:p-24">
+                                <h2 className="text-2xl font-bold sm:text-3xl">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore,
                                     debitis.
                                 </h2>
 
-                                <p class="mt-4 text-gray-600">
+                                <p className="mt-4 text-gray-600">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid,
                                     molestiae! Quidem est esse numquam odio deleniti, beatae, magni
                                     dolores provident quaerat totam eos, aperiam architecto eius quis
@@ -79,7 +79,7 @@ const Section = () => {
 
                                 <Link
                                     href="#"
-                                    class="mt-8 inline-block rounded border border-indigo-600 bg-indigo-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500"
+                                    className="mt-8 inline-block rounded border border-indigo-600 bg-indigo-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500"
                                 >
                                     Get in Touch
                                 </Link>
