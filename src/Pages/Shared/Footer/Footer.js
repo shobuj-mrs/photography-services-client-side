@@ -10,19 +10,19 @@ const Footer = () => {
                     <div className="mx-auto max-w-3xl space-y-6">
                         <div className="flex justify-center gap-6">
                             <Link
-                                className="text-blue-500 hover:text-blue-500/75"
+                                className="text-blue-500 text-3xl hover:text-blue-500/75"
                                 to={'/'}
                             >
                                 <FaTwitter></FaTwitter>
                             </Link>
 
                             <Link
-                                className="text-gray-900 hover:text-gray-900/75"
+                                className="text-gray-900 text-3xl hover:text-gray-900/75"
                             ><FaGithub></FaGithub>
                             </Link>
 
                             <Link
-                                className="text-pink-600 hover:text-pink-600/75"
+                                className="text-pink-600 text-3xl hover:text-pink-600/75"
                             >
                                 <FaXbox></FaXbox>
                             </Link>

@@ -10,7 +10,7 @@ const DetailServices = () => {
 
 
     return (
-        <div>
+        <div className='my-12 mx-12'>
             <div className="flex flex-col max-w-lg p-6 space-y-6 overflow-hidden rounded-lg shadow-md dark:bg-gray-900 dark:text-gray-100">
 
                 <div>
@@ -41,7 +41,7 @@ const DetailServices = () => {
                     </div>
 
                     <div>
-                        <p>Price : {price}</p>
+                        <p><span className='text-xl font-bold'>Price </span>: {price}</p>
                     </div>
 
                 </div>

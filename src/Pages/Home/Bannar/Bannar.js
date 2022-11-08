@@ -18,14 +18,16 @@ const Bannar = () => {
                         <h1 className="text-3xl font-extrabold sm:text-5xl">
                             Let us find your
 
-                            <strong className="block font-extrabold text-rose-700">
-                                Forever Home.
+                            <strong className="block font-extrabold text-cyan-500">
+                                Next Destination
+                            </strong>
+                            <strong className="block font-extrabold text-rose-600">
+                                Forever Your Home.
                             </strong>
                         </h1>
 
-                        <p className="mt-4 max-w-lg sm:text-xl sm:leading-relaxed">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt illo
-                            tenetur fuga ducimus numquam ea!
+                        <p className="mt-4 max-w-lg sm:text-xl dark:text-gray-900 sm:leading-relaxed">
+                        As a photographer or simply a photography lover you are always curious to find out what are the best photography out there. But there are so many amazing photographers that it is sometimes difficult to know where to look and you miss the ones you wish you had known sooner.
                         </p>
 
                         <div className="mt-8 flex flex-wrap gap-4 text-center">
@@ -37,7 +39,7 @@ const Bannar = () => {
                             </Link>
 
                             <Link
-                                href="#"
+                               to={'/learnmore'}
                                 className="block w-full rounded bg-white px-12 py-3 text-sm font-medium text-rose-600 shadow hover:text-rose-700 focus:outline-none focus:ring active:text-rose-500 sm:w-auto"
                             >
                                 Learn More
