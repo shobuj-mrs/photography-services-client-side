@@ -1,6 +1,6 @@
 import { GoogleAuthProvider } from 'firebase/auth';
 import React, { useContext, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../../Context/AuthProvider';
 import { FaGoogle } from "react-icons/fa";
 
@@ -8,6 +8,7 @@ const Register = () => {
 
     const [error, setError] = useState('');
     const { createUser, updateUserProfile, loginProvider } = useContext(AuthContext);
+    const navigate = useNavigate();
 
     //  google sign in method
     const googleProvider = new GoogleAuthProvider();
@@ -38,7 +39,7 @@ const Register = () => {
                 form.reset();
                 setError('');
                 handleUpdateUserProfile(name);
-                // navigate('/')
+                navigate('/')
             })
             .catch(error => {
                 console.error(error);

@@ -20,7 +20,8 @@ export const router = createBrowserRouter([
             },
             {
                 path: '/services',
-                element: <Services></Services>
+                element: <Services></Services>,
+                loader: () => fetch('https://assignment-11-service-server-side.vercel.app/services')
             },
             {
                 path: '/login',

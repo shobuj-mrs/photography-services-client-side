@@ -1,16 +1,14 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../../../Context/AuthProvider';
 
 const Header = () => {
-    const [state, setState] = useState(false)
+    const [state, setState] = useState(false);
+    const { logOut } = useContext(AuthContext);
 
     const navigation = [
         { title: "Home", path: "/" },
-        { title: "Services", path: "/services" }
-
-    ]
-
-    const menu = [
+        { title: "Services", path: "/services" },
         { title: "Login", path: "/login" },
         { title: "Sign Up", path: "/signin" }
     ]
@@ -61,24 +59,14 @@ const Header = () => {
                             }
                         </ul>
                     </div>
-                    <div className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${state ? 'block' : 'hidden'}`}>
-                        <ul className="justify-center items-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-                            {
-                                menu.map((item, idx) => {
-                                    return (
-                                        <li key={idx} className="text-white font-semibold hover:text-indigo-600">
-                                            <Link to={item.path}>
-                                                {item.title}
-                                            </Link>
-                                        </li>
-                                    )
-                                })
-                            }
-                        </ul>
+                    <div className="hidden md:inline-block">
+                        <button
+                            onClick={logOut}
+                            className='btn btn-ghost'>Log Out</button>
                     </div>
                 </div>
-            </nav >
-        </div >
+            </nav>
+        </div>
     );
 };
 
