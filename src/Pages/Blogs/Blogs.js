@@ -23,7 +23,10 @@ const Blogs = () => {
                     <span className="text-sm dark:text-gray-400">November 09, 2022</span>
                     <div className="mt-3">
                         <h1 className='text-4xl font-semibold text-orange-500'>2. What is JWT, and how does it work?</h1>
-                        <p className="mt-2">.</p>
+                        <p className="mt-2">JWT, or JSON Web Token, is an open standard used to share security information between two parties — a client and a server. Each JWT contains encoded JSON objects, including a set of claims. JWTs are signed using a cryptographic algorithm to ensure that the claims cannot be altered after the token is issued.</p>
+                        <p className="mt-2">For beginning developers, JSON stands for JavaScript Object Notation and is a text-based format for transmitting data across web applications. It stores information in an easy-to-access manner, both for developers and computers. It can be used as a data format by any programming language and is quickly becoming the preferred syntax for APIs, surpassing XML.</p>
+                        <p className="mt-2">JWTs differ from other web tokens in that they contain a set of claims. Claims are used to transmit information between two parties. What these claims are depends on the use case at hand. For example, a claim may assert who issued the token, how long it is valid for, or what permissions the client has been granted.</p>
+                        <p className="mt-2">The payload contains the claims. This is displayed as a JSON string, usually containing no more than a dozen fields to keep the JWT compact. This information is typically used by the server to verify that the user has permission to perform the action they are requesting.There are no mandatory claims for a JWT, but overlaying standards may make claims mandatory. For example, when using JWT as bearer access token under OAuth2.0, iss, sub, aud, and exp must be present. some are more common than others. The signature ensures that the token hasn't been altered. The party that creates the JWT signs the header and payload with a secret that is known to both the issuer and receiver, or with a private key known only to the sender. When the token is used, the receiving party verifies that the header and payload match the signature. </p>
                     </div>
                 </div>
             </div>
@@ -32,7 +35,10 @@ const Blogs = () => {
                     <span className="text-sm dark:text-gray-400">November 09, 2022</span>
                     <div className="mt-3">
                         <h1 className='text-4xl font-semibold text-orange-500'>3. What is the difference between javascript and NodeJS?</h1>
-                        <p className="mt-2">.</p>
+                        <p className="mt-2">NodeJS is a cross-platform and opensource Javascript runtime environment that allows the javascript to be run on the server-side. Nodejs allows Javascript code to run outside the browser. Nodejs comes with a lot of modules and mostly used in web development. </p>
+                        <p className="mt-2">Javascript is a Scripting language. It is mostly abbreviated as JS. It can be said that Javascript is the updated version of the ECMA script. Javascript is a high-level programming language that uses the concept of Oops but it is based on prototype inheritance. </p>
+                        <p className="mt-2">Javascript can run in any browser engine as like JS core in safari and Spidermonkey in Firefox. NodeJs V8 is the Javascript engine inside of node.js that parses and runs Javascript. </p>
+                        <p className="mt-2">It is the upgraded version of ECMA script that uses Chrome's V8 engine written in C++. Nodejs is written in C, C++ and Javascript.</p>
                     </div>
                 </div>
             </div>
