@@ -75,7 +75,7 @@ const Login = () => {
                         </div>
 
                     </div>
-                    <button className="block w-full p-3 text-center  dark:text-gray-900 dark:bg-cyan-400 rounded-lg">Sign in</button>
+                    <button className="mt-8 w-full inline-block rounded border border-indigo-600 bg-indigo-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500">Sign in</button>
                     <p className='text-red-600'>
                         {error}
                     </p>

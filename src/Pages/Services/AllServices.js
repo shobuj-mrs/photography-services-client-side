@@ -9,7 +9,7 @@ const AllServices = ({ service }) => {
     const { title, price, image, rating, description, _id } = service;
     return (
         <div>
-            <div className="flex flex-col max-w-lg p-6 space-y-6 overflow-hidden rounded-lg shadow-md dark:bg-gray-900 dark:text-gray-100">
+            <div className="flex flex-col max-w-lg p-6 space-y-6 overflow-hidden rounded-lg shadow-2xl  dark:text-gray-900 border-2 ">
 
                 <div>
                     <h2 className="mb-2 text-2xl font-semibold">{title}</h2>
@@ -25,9 +25,9 @@ const AllServices = ({ service }) => {
 
                     <p className="text-sm dark:text-gray-400">
                         {
-                            description.length > 100 ?
-                                <> {description.slice(0, 100) + '...'} <button
-                                    className='bg-indigo-500 text-white font-semibold hover:bg-pink-600 px-2 py-1 rounded-lg'
+                            description.length > 150 ?
+                                <> {description.slice(0, 150) + '...'} <button
+                                    className="mt-2 inline-block rounded border border-rose-600 bg-rose-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-rose-600 focus:outline-none focus:ring active:text-rose-500"
 
                                 > <Link to={`/services/${_id}`}>Show more Details</Link></button></>
                                 :

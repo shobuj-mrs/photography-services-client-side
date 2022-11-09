@@ -1,8 +1,9 @@
 import { GoogleAuthProvider } from 'firebase/auth';
 import React, { useContext, useState } from 'react';
+import { FaGithub, FaGoogle } from 'react-icons/fa';
 import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../../Context/AuthProvider';
-import { FaGoogle } from "react-icons/fa";
+
 
 const Register = () => {
 
@@ -58,55 +59,77 @@ const Register = () => {
 
 
     return (
-        <div className="hero w-full my-20">
-            <div className="hero-content grid gap-6 md:grid-cols-2 flex-col lg:flex-row">
+        <div>
+            <div className=" grid gap-6 md:grid-cols-2 flex-col lg:flex-row">
                 <div className="text-center lg:text-left">
                     <img className='w-full' src='https://i.ibb.co/MVVm1Hx/password.webp' alt="" />
                 </div>
-                <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100 my-6">
-                    <h1 className="text-5xl text-center font-bold">Sign Up</h1>
-                    <form onSubmit={handleSubmit} className="card-body">
-                        <div className="form-control">
-                            <label className="label">
-                                <span className="label-text">Name</span>
-                            </label>
-                            <input type="text" name='name' placeholder="Your Name" className="input input-bordered" required />
-                        </div>
-                        <div className="form-control">
-                            <label className="label">
-                                <span className="label-text">Email</span>
-                            </label>
-                            <input type="email" name='email' placeholder="email" className="input input-bordered" required />
-                        </div>
-                        <div className="form-control">
-                            <label className="label">
-                                <span className="label-text">Password</span>
-                            </label>
-                            <input type="password" name='password' placeholder="password" className="input input-bordered" required />
 
+                <div className="w-full max-w-md p-8 space-y-3 rounded-xl shadow-2xl dark:bg-gray-900 dark:text-gray-100">
+                    <h1 className="text-2xl font-bold text-center">Sign Up</h1>
+
+                    <form
+                        onSubmit={handleSubmit}
+                        className="space-y-6 ng-untouched ng-pristine ng-valid"
+                    >
+                        <div className="space-y-1 text-sm">
+                            <label htmlFor="username" className="block dark:text-gray-400">User Name</label>
+                            <input
+                                type="text"
+                                name="name"
+                                placeholder="User name"
+                                className="w-full px-4 py-3 rounded-md dark:border-gray-700 dark:bg-gray-900 dark:text-gray-100 focus:dark:border-violet-400"
+                                required />
                         </div>
-                        <p className='text-2xl text-red-600'>
+                        <div className="space-y-1 text-sm">
+                            <label htmlFor="email" className="block dark:text-gray-400">Email</label>
+                            <input
+                                type="email"
+                                name="email"
+                                placeholder="email"
+                                className="w-full px-4 py-3 rounded-md dark:border-gray-700 dark:bg-gray-900 dark:text-gray-100 focus:dark:border-violet-400"
+                                required />
+                        </div>
+
+                        <div className="space-y-1 text-sm">
+                            <label htmlFor="password" className="block dark:text-gray-400">Password</label>
+                            <input
+                                type="password"
+                                name="password"
+
+                                placeholder="Password"
+                                className="w-full px-4 py-3 rounded-md dark:border-gray-700 dark:bg-gray-900 dark:text-gray-100 focus:dark:border-violet-400"
+                                required />
+                        </div>
+
+                        <button className="mt-8 w-full inline-block rounded border border-indigo-600 bg-indigo-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500">Sign Up</button>
+                        <p className='text-red-600'>
                             {error}
                         </p>
-                        <div className="form-control mt-6">
-                            <input className="btn btn-primary" type="submit" value="Sign Up" />
-                        </div>
+
                     </form>
-                    <p className='text-center'>Already have an account? <Link className='text-orange-600 font-bold' to="/login">Login</Link> </p>
 
                     <div className="flex items-center pt-4 space-x-1">
                         <div className="flex-1 h-px sm:w-16 dark:bg-gray-700"></div>
                         <p className="px-3 text-sm dark:text-gray-400">Login with social accounts</p>
                         <div className="flex-1 h-px sm:w-16 dark:bg-gray-700"></div>
                     </div>
-                    <div className="flex justify-center space-x-4 mb-12 mt-6">
+                    <div className="flex justify-center space-x-4">
                         <button
                             onClick={handleGoogleSignIn}
-                            className="p-3 btn btn-info flex items-center justify-center">
-                            <FaGoogle className='text-2xl text-red-700'></FaGoogle>
-                            <span className='text-xl text-bold ml-2'>Google Sign In</span>
+                            aria-label="Log in with Google"
+                            className="p-3 rounded-sm"
+                        >
+                            <FaGoogle></FaGoogle>
+                        </button>
+
+                        <button aria-label="Log in with GitHub" className="p-3 rounded-sm">
+                            <FaGithub></FaGithub>
                         </button>
                     </div>
+                    <p className="text-xs text-center sm:px-6 dark:text-gray-400">Already have an account?
+                        <Link rel="noopener noreferrer" to={'/login'} className='text-orange-600 font-bold'>Login</Link>
+                    </p>
                 </div>
             </div>
         </div>
