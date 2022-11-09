@@ -18,7 +18,7 @@ const DetailServices = () => {
 
                     <PhotoProvider>
 
-                        <PhotoView>
+                        <PhotoView src={image}>
                             <img src={image} alt="" className="object-cover w-full rounded mb-4 h-60 sm:h-96 dark:bg-gray-500" />
 
                         </PhotoView>

@@ -4,12 +4,11 @@ import { PhotoProvider, PhotoView } from 'react-photo-view';
 import { Link } from 'react-router-dom';
 import { FaStar, FaStarHalf } from "react-icons/fa";
 
-
-const AllServices = ({ service }) => {
+const ServiceThree = ({ service }) => {
     const { title, price, image, rating, description, _id } = service;
     return (
         <div>
-            <div className="flex flex-col max-w-lg p-6 space-y-6 overflow-hidden rounded-lg shadow-md dark:bg-gray-900 dark:text-gray-100">
+            <div className="flex flex-col max-w-lg p-6 space-y-6 overflow-hidden rounded-lg shadow-2xl border-2 dark:text-gray-800">
 
                 <div>
                     <h2 className="mb-2 text-2xl font-semibold">{title}</h2>
@@ -25,9 +24,9 @@ const AllServices = ({ service }) => {
 
                     <p className="text-sm dark:text-gray-400">
                         {
-                            description.length > 100 ?
-                                <> {description.slice(0, 100) + '...'} <button
-                                    className='bg-indigo-500 text-white font-semibold hover:bg-pink-600 px-2 py-1 rounded-lg'
+                            description.length > 150 ?
+                                <> {description.slice(0, 150) + '...'} <button
+                                    className="mt-3 inline-block rounded border border-indigo-600 bg-indigo-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500"
 
                                 > <Link to={`/services/${_id}`}>Show more Details</Link></button></>
                                 :
@@ -54,4 +53,4 @@ const AllServices = ({ service }) => {
     );
 };
 
-export default AllServices;
+export default ServiceThree;
