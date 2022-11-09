@@ -16,7 +16,7 @@ const DetailServices = () => {
     const handleInputBlur = e => {
         const form = e.target;
         const email = user?.email || 'unregistered';
-        const reviewMessage = form.message.value;
+        const reviewMessage = form.value;
 
         const reviewDetails = {
             id: _id,
@@ -26,13 +26,16 @@ const DetailServices = () => {
             reviewMessage
         }
         setReview(reviewDetails);
-        // form.reset();
+        // form.reset("");
+       
     }
 
     const handleAddToReview = e => {
         e.preventDefault();
+        const form = e.target;
+        
 
-        fetch('http://localhost:5000/myreviews', {
+        fetch('http://localhost:5000/reviews', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -41,7 +44,13 @@ const DetailServices = () => {
         })
             .then(res => res.json())
             .then(data => {
-                console.log(data)
+                console.log(data);
+                if (data.acknowledged) {
+                    alert('Your review added successfully')
+                    form.reset();
+
+                }
+
             })
             .catch(err => console.error(err));
 
@@ -92,11 +101,11 @@ const DetailServices = () => {
                 <div>
                     {
                         user?.email ?
-                            <div className="flex flex-col w-full p-8 shadow-sm rounded-xl lg:p-12 bg-cyan-900 text-gray-100">
+                            <div className="flex flex-col w-full p-8 shadow-sm rounded-xl lg:p-12 bg-emerald-700 text-gray-100">
                                 <div className="flex flex-col  w-full">
                                     <h2 className="text-3xl">User Name : {user.displayName}</h2>
                                     <h4 className="text-xl mb-4">Photography item is {title}</h4>
-                                    <h2 className="text-3xl font-semibold text-center">Your opinion matters!</h2>
+                                    <h2 className="text-3xl font-semibold text-center">Your Review and feedback mettars!</h2>
                                     <div className="flex flex-col items-center py-6 space-y-2">
                                         <span className="text-center">How was your experience?</span>
 
@@ -116,7 +125,7 @@ const DetailServices = () => {
                             </div>
 
                             :
-                            <div>
+                            <div className='bg-cyan-800 p-6 w-full rounded-2xl shadow-2xl mt-12'>
 
                                 <p>Please login to give a review!</p>
                                 <button

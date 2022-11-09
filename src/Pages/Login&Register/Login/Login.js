@@ -19,7 +19,7 @@ const Login = () => {
         loginProvider(googleProvider)
             .then(result => {
                 const user = result.user;
-                // navigate(from, { replace: true });
+                navigate(from, { replace: true });
                 console.log(user);
             })
             .catch(error => console.error(error))
