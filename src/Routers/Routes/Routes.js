@@ -8,6 +8,7 @@ import Register from "../../Pages/Login&Register/Register/Register";
 import Services from "../../Pages/Services/Services";
 import DetailServices from "../../Pages/Services/DetailServices";
 import LearnMore from "../../Pages/LearnMore/LearnMore";
+import Reviews from "../../Pages/Reviews/Reviews";
 
 
 export const router = createBrowserRouter([
@@ -47,6 +48,10 @@ export const router = createBrowserRouter([
             {
                 path: '/learnmore',
                 element: <LearnMore></LearnMore>
+            },
+            {
+                path: '/reviews',
+                element: <Reviews></Reviews>
             }
         ]
     }
