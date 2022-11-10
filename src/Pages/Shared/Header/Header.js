@@ -45,7 +45,7 @@ const Header = () => {
                     </div>
 
                     {/* links  */}
-                    <div className={`lg:flex py-2 font-semibold  lg:py-0 text-center justify-center items-center  lg:flex-row flex-col absolute lg:static bg-teal-600 lg:bg-black/0 w-full lg:w-auto  duration-200 ease-in ${open ? 'hidden' : 'top-[56px]'}`}>
+                    <div className={`lg:flex py-2 font-semibold  lg:py-0 text-center justify-center items-center  lg:flex-row flex-col absolute lg:static bg-teal-600 lg:bg-black/0 w-full lg:w-auto  duration-200 ease-in ${open ? 'hidden' : 'top-[58px]'}`}>
 
                         <Link
                             to='/'
@@ -89,7 +89,7 @@ const Header = () => {
                         {menuItems}
                     </div>
 
-                    <button onClick={() => setOpen(!open)} className=" h-12 flex w-12 text-white lg:hidden">
+                    <button onClick={() => setOpen(!open)} className=" h-10 flex w-10 text-white lg:hidden">
                         {
                             open ? <Bars3Icon /> : <XMarkIcon />
                         }
