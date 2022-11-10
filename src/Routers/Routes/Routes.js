@@ -10,6 +10,7 @@ import DetailServices from "../../Pages/Services/DetailServices";
 import LearnMore from "../../Pages/LearnMore/LearnMore";
 import Reviews from "../../Pages/Reviews/Reviews";
 import PrivetRoute from "../PrivetRoutes/PrivetRoutes";
+import AddService from "../../Pages/AddService/AddService";
 
 
 export const router = createBrowserRouter([
@@ -54,6 +55,10 @@ export const router = createBrowserRouter([
                 path: '/reviews',
                 element: <PrivetRoute><Reviews></Reviews></PrivetRoute>,
                 loader: () => fetch('https://assignment-11-service-server-side.vercel.app/reviews')
+            },
+            {
+                path: '/addservice',
+                element: <PrivetRoute> <AddService></AddService></PrivetRoute>
             }
         ]
     }

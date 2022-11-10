@@ -24,7 +24,7 @@ const Header = () => {
                 :
                 <div className='items-center flex-shrink-0 hidden lg:flex'>
                     <Link to='/login'><button className="self-center lg:px-8 py-3 font-semibold px-4 text-white  rounded-2xl hover:bg-black/10 transition duration-300 ease-in-out">Login</button></Link>
-                    
+
                     <Link to='/signin'><button className="self-center lg:px-8 py-3 border p-3 border-black/50 hover:border-white transition duration-300 ease-in-out font-semibold rounded-2xl text-white bg-cyan-900 ">Sign Up</button></Link>
                 </div>
         }
@@ -70,14 +70,14 @@ const Header = () => {
                         </Link>
 
                         <Link
-                            to={`/myreview/user/${user?.email}`}
+                            to='/reviews'
                             className="flex items-center px-4 py-2 text-white rounded-2xl hover:bg-black/10 transition duration-300 ease-in-out"
                         >
-                            My All Review
+                          Review
                         </Link>
 
                         <Link
-                            to='/addservices'
+                            to='/addservice'
                             className="flex items-center px-4 text-white py-2 rounded-2xl hover:bg-black/10 transition duration-300 ease-in-out"
                         >
                             Add New Services
