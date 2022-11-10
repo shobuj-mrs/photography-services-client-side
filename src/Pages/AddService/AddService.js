@@ -1,12 +1,53 @@
 import React from 'react';
 
+
 const AddService = () => {
 
+    const handlePlaceOrder = event => {
+        event.preventDefault();
+        const form = event.target;
+        const title = form.title.value;
+        const image = form.image.value;
+        const description = form.description.value;
+        const price = form.price.value;
 
+
+        const order = {
+            serviceName: title,
+            price,
+            image,
+            description,
+
+        }
+
+
+
+        fetch('https://assignment-11-service-server-side.vercel.app/service', {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(order)
+        })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data)
+                if (data.acknowledged) {
+                    alert('added successfully')
+                    form.reset();
+
+                }
+            })
+            .catch(er => console.error(er));
+
+
+    }
     return (
         <div>
             <div className="rounded-lg bg-white p-8 shadow-lg lg:col-span-3 lg:p-12">
-                <form className="space-y-4">
+                <form
+                    onSubmit={handlePlaceOrder}
+                    className="space-y-4">
                     <div>
                         <label className="sr-only" htmlFor="name">title</label>
                         <input
@@ -28,17 +69,28 @@ const AddService = () => {
 
                             />
                         </div>
+                        <div>
+                            <label className="sr-only" htmlFor="email">Price</label>
+                            <input
+                                className="w-full rounded-lg border-gray-200 p-3 text-sm"
+                                name='price'
+                                placeholder="price"
+                                type="text"
+
+                            />
+                        </div>
 
                     </div>
 
                     <div>
                         <label className="sr-only" htmlFor="message">Description</label>
-                        <textarea
+                        <input
+                            type='text'
                             className="w-full rounded-lg border-gray-200 p-3 text-sm"
                             placeholder="Description"
                             rows="8"
 
-                        ></textarea>
+                        ></input>
                     </div>
 
                     <div className="mt-4">

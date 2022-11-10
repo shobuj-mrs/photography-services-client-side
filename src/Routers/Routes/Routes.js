@@ -58,7 +58,8 @@ export const router = createBrowserRouter([
             },
             {
                 path: '/addservice',
-                element: <PrivetRoute> <AddService></AddService></PrivetRoute>
+                element: <PrivetRoute> <AddService></AddService></PrivetRoute>,
+                loader: () => fetch('https://assignment-11-service-server-side.vercel.app/services')
             }
         ]
     }
