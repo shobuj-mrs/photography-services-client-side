@@ -1,3 +1,72 @@
+
+# Firebase Hosting live link 
+
+[firebase link : ]( https://my-services-a-11.web.app)
+ https://my-services-a-11.web.app
+
+## API Reference
+* services API link :
+https://assignment-11-service-server-side.vercel.app
+
+
+
+
+## 🔗 Links
+* gitHub client side links : https://github.com/Porgramming-Hero-web-course/b6a11-service-review-client-side-shobuj-mrs
+
+* gitHub server side link : https://github.com/Porgramming-Hero-web-course/b6a11-service-review-server-side-shobuj-mrs
+## Deployment with firebase
+ Hosting frist to your firebase project and  follow the firebase directions
+To deploy this project run frist your project npm run build and after that projects firebase deploy
+
+```git bash & terminal & command line
+  npm run build
+```
+
+``` next command 
+firebase deploy
+```
+
+```command
+npx create-react-app my-app
+```
+
+
+# Uses the css componants
+
+I can use the ...
+
+* Reactjs
+* Nodejs
+* Mongodb
+* tailwind css and the componants are
+* flowbite
+* Mambaui
+* HyperUi
+
+# The PhotoGraphy
+
+* To carry out the national PhotoGraphy policy, assist all PhotoGraphys Federation to execute the overall guidance, selection, training and development of elite pictures, which aims to upgrade their strength and performance in international campaigns.
+
+##  PhotoGraphys Science and Research Department
+* Committed to test, study and analyze the effects of pictures before, during and after exercises on the strength of intelligent PhotoGraphy Technology, and to provide elite pictures with practical training programs to improve performance and achievements.
+
+## A Photo Reviewer and Training Department
+
+* To arrange the photos you can see other pictures student-pictures, and help with the elites pictures to achieve a balance between training and education. To offer career counseling service and develop pictures’ with multiple courses to maximize their job opportunities.
+## Acknowledgements
+
+ - [Awesome Readme Templates](https://awesomeopensource.com/project/elangosundar/awesome-README-templates)
+ - [Awesome README](https://github.com/matiassingers/awesome-readme)
+ - [How to write a Good readme](https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project)
+
+
+## Author
+
+- [MR Sobuz](https://www.github.com/octokatherine)
+
+## 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
